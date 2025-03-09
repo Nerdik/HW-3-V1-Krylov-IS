@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 
 // Function for Excercise 1
@@ -135,10 +136,6 @@ void ex5HelpFunction(double x)
     }
 }
 
-// Function for Excercise 6
-
-
-
 void ex5()
 {
     double a, b, h;
@@ -155,6 +152,47 @@ void ex5()
     {
         std::cout << i << "\t";
         ex5HelpFunction(i);
+        std::cout << std::endl;
+    }
+}
+
+// Function for Excercise 6
+void ex6HelpFunction(double x)
+{
+    if (x >= 0.9)
+    {
+        std::cout << 1 / std::pow((0.1 + x), 2);
+    }
+    else if (0 <= x && x < 0.9)
+    {
+        std::cout << 0.2 * x + 0.1;
+    }
+    else
+    {
+        std::cout << x * x  + 0.2;
+    }
+}
+
+
+void ex6()
+{
+    double a, b, h;
+    std::cout << "Input start point a: ";
+    std::cin >> a;
+    std::cout << "Input end point b: ";
+    std::cin >> b;
+    std::cout << "Input step h: ";
+    std::cin >> h;
+
+    std::cout << "x\tf(x)" << std::endl;
+
+    std::cout << std::fixed << std::setprecision(3);
+
+    for (double i = a; i <= b; i += h)
+    {
+        std::cout << i << "\t";
+        
+        ex6HelpFunction(i);
         std::cout << std::endl;
     }
 }
@@ -179,9 +217,10 @@ int main()
     // ex4();
 
     // Exercise 5.
-    ex5();
+    // ex5();
 
     // Exercise 6.
+    ex6();
 
     return 0;
 }
