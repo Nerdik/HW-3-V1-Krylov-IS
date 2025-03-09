@@ -122,8 +122,42 @@ void ex4()
     }
 }
 
-
 // Function for Excercise 5
+void ex5HelpFunction(double x)
+{
+    if (x == -1)
+    {
+        std::cout << "The function is not defined";
+    }
+    else
+    {
+        std::cout << 1 / std::pow((1 + x * x), 2);
+    }
+}
+
+// Function for Excercise 6
+
+
+
+void ex5()
+{
+    double a, b, h;
+    std::cout << "Input start point a: ";
+    std::cin >> a;
+    std::cout << "Input end point b: ";
+    std::cin >> b;
+    std::cout << "Input step h: ";
+    std::cin >> h;
+
+    std::cout << "x\tf(x)" << std::endl;
+
+    for (double i = a; i <= b; i += h)
+    {
+        std::cout << i << "\t";
+        ex5HelpFunction(i);
+        std::cout << std::endl;
+    }
+}
 
 
 int main()
@@ -142,10 +176,12 @@ int main()
     // ex3For();
 
     // Exercise 4.
-    ex4();
+    // ex4();
 
     // Exercise 5.
-    
+    ex5();
+
+    // Exercise 6.
 
     return 0;
 }
