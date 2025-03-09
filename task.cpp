@@ -77,7 +77,37 @@ void ex2()
 }
 
 // Function for Excercise 3
+void ex3While()
+{
+    int i = 1;
+    while (i <= 21)
+    {
+        std::cout << i << " ";
+        i += 2;
+    }
+    std::cout << std::endl;
+}
 
+void ex3DoWhile()
+{
+    int i = 1;
+    do
+    {
+        std::cout << i << " ";
+        i += 2;
+    }
+    while (i <= 21);
+    std::cout << std::endl;
+}
+
+void ex3For()
+{
+    for (int i = 1; i <= 21; i += 2)
+    {
+        std::cout << i << " ";
+    }
+    std::cout << std::endl;
+}
 
 // Function for Excercise 4
 
@@ -88,13 +118,17 @@ void ex2()
 int main()
 {
     // Exercise 1.
-    ex1();
+    // ex1();
 
     // Exercise 2.
-    ex2();
+    // ex2();
 
     // Exercise 3.
+    ex3While();
 
+    ex3DoWhile();
+
+    ex3For();
 
     // Exercise 4.
 
