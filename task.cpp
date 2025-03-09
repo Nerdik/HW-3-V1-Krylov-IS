@@ -191,7 +191,7 @@ void ex6()
     for (double i = a; i <= b; i += h)
     {
         std::cout << i << "\t";
-        
+
         ex6HelpFunction(i);
         std::cout << std::endl;
     }
@@ -201,23 +201,23 @@ void ex6()
 int main()
 {
     // Exercise 1.
-    // ex1();
+    ex1();
 
     // Exercise 2.
-    // ex2();
+    ex2();
 
     // Exercise 3.
-    // ex3While();
+    ex3While();
 
-    // ex3DoWhile();
+    ex3DoWhile();
 
-    // ex3For();
+    ex3For();
 
     // Exercise 4.
-    // ex4();
+    ex4();
 
     // Exercise 5.
-    // ex5();
+    ex5();
 
     // Exercise 6.
     ex6();
