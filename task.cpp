@@ -110,6 +110,17 @@ void ex3For()
 }
 
 // Function for Excercise 4
+void ex4()
+{
+    for (int i = 1; i < 5; i++)
+    {
+        for (int j = 1; j < 7; j++)
+        {
+            std::cout << 5 << " ";
+        }
+        std::cout << std::endl;
+    }
+}
 
 
 // Function for Excercise 5
@@ -124,17 +135,17 @@ int main()
     // ex2();
 
     // Exercise 3.
-    ex3While();
+    // ex3While();
 
-    ex3DoWhile();
+    // ex3DoWhile();
 
-    ex3For();
+    // ex3For();
 
     // Exercise 4.
-
+    ex4();
 
     // Exercise 5.
-
+    
 
     return 0;
 }
