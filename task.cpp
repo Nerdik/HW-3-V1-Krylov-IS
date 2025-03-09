@@ -113,9 +113,9 @@ void ex3For()
 // Function for Excercise 4
 void ex4()
 {
-    for (int i = 1; i < 5; i++)
+    for (int i = 1; i < 5; ++i)
     {
-        for (int j = 1; j < 7; j++)
+        for (int j = 1; j < 7; ++j)
         {
             std::cout << 5 << " ";
         }
